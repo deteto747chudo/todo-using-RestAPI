@@ -17,7 +17,7 @@ To set up the Task Manager app locally, follow these steps:
 
 1. Clone the Repository
 
-   git clone https://github.com/yourusername/task-manager-app.git
+   git clone https://github.com/deteto747chudo/todo-using-RestAPI
 
 2. Navigate to the Project Directory
 
@@ -35,7 +35,7 @@ To set up the Task Manager app locally, follow these steps:
 
    npm start
 
-   The app will be available at http://localhost:3000.
+   The app will be available at http://127.0.0.1:5000/.
 
 ## API Endpoints
 
