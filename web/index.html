@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+    <meta name="apple-mobile-web-app-title" content="App name" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-background">
+    <div class="welcome-container">
+        <div class="welcome-title">Welcome!</div>
+        <div class="date-display" id="currentDate"></div>
+    </div>
+
+    <button id="addTaskButton" class="btn-add-task">add task</button>
+    <div id="searchContainer">
+        <span id="searchIcon" class="search-icon">&#128269;</span>
+        <input type="text" id="searchInput" placeholder="Search tasks...">
+    </div>
+
+    <div id="taskFormContainer" class="task-form-container">
+        <div class="task-form">
+            <div class="form-title">Add New Task</div>
+            <input type="text" id="taskTitle" class="form-input" placeholder="Task title">
+            <input type="datetime-local" id="taskDeadline" class="form-input">
+            <button id="submitTaskButton" class="btn-submit-task">Add Task</button>
+            <button id="closeTaskFormButton" class="btn-close-form">Close</button>
+        </div>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+
+    <div id="taskDetailModal" class="modal-container">
+        <div class="modal-content">
+            <div class="modal-title">Task Details</div>
+            <div class="form-group">
+                <label for="modalTaskTitle" class="form-label">Title</label>
+                <input type="text" id="modalTaskTitle" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="modalTaskDeadline" class="form-label">Deadline</label>
+                <input type="datetime-local" id="modalTaskDeadline" class="form-input">
+            </div>
+            <button id="updateTaskButton" class="btn-submit-task">Update</button>
+            <button id="deleteTaskButton" class="btn-submit-task">Delete</button>
+            <button id="closeModalButton" class="btn-close-form">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

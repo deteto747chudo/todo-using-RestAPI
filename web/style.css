@@ -1,0 +1,214 @@
+html, body {
+    overflow: hidden;
+}
+/* General Styles */
+.body-background {
+    background-image: url('background-image.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Welcome Container */
+.welcome-container {
+    text-align: left;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 30px;
+}
+
+.welcome-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.date-display {
+    font-size: 1rem;
+    color: black;
+}
+
+/* Add Task Button */
+.btn-add-task {
+    background-color: #505153;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    width: 96%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    border: none;
+    font-size: 1.25rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-bottom: 15px;
+    margin-left: 8px;
+}
+
+/* Task Form Container */
+.task-form-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Task Form */
+.task-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form-input {
+    border: 1px solid #d1d5db;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0.75rem; /* Increased margin */
+}
+
+.btn-submit-task, .btn-close-form {
+    background-color: #3b3c3d;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-close-form {
+    background-color: #d1d5db;
+    color: black;
+    margin-top: 0.5rem;
+}
+
+/* Task List */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Task Item */
+.task-item {
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.2s ease;
+}
+
+.task-item:hover {
+    background-color: #f9fafb;
+}
+
+/* Modal Container */
+.modal-container {
+    position: fixed;
+    inset: 0;
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    max-width: 32rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Title */
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Form Label */
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Form Input */
+.form-input {
+    border: 1px solid #d1d5db;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Search Icon and Input */
+#searchContainer {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    margin-top: 27px;
+}
+
+.search-icon {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+#searchInput {
+    display: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 0.375rem;
+    background-color: white;
+    color: black;
+    margin-left: 0.5rem;
+    width: 150px;
+}
