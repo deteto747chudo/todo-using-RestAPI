@@ -93,4 +93,4 @@ For optimal performance on iOS devices:
 
 - Frontend: HTML, CSS, JavaScript, Tailwind CSS
 - Backend: Node.js, Express.js (for API)
-- Database: MongoDB (or your choice)
+- Database: MongoDB
